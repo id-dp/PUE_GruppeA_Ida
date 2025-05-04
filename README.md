@@ -15,6 +15,7 @@ Das Skript 'power_curve.py' liest die Leistungsdaten aus der Datei 'data/actiivi
 
 ## Anforderungen und Nutzungen
 
+Um das Projekt auszuführen, muss das Git-Repository zunächst lokal geklont werden. Anschließend werden mithilfe von PDM alle benötigten Abhängigkeiten installiert, indem im Projektverzeichnis der Befehl 'pdm install' ausgeführt wird.
 Nach erfolgreicher Installation kann das Skript 'power_curve.py' gestartet werden. Dieses Skript liest die Leistungsdaten aus der Datei data/activity.csv, sortiert sie mit einem selbst implementierten Bubble-Sort-Algorithmus und erstellt daraus eine vereinfachte Power-Curve.
 Die resultierende Grafik wird im Verzeichnis 'figures' unter dem Namen power_curve.png gespeichert.
 
