@@ -22,3 +22,33 @@ Die resultierende Grafik wird im Verzeichnis 'figures' unter dem Namen power_cur
 ## Sakai Abgabe 1 - Power Curve
 In folgender Graik ist die erstellte Power-Curve zu sehen.
 ![](figures/power_curve.png)
+
+
+# EKG App
+
+## Funktionsbeschreibungen
+
+## Funktionsbeschreibung
+Die App soll __Diagnostiker:in__ ermöglichen, EKG_Daten verschiedener Patienten zu erfassen, zu speicher und auszuwerten. Die App soll eine einfache und intuiteve Benutzeroberfläche bierten, um die Bedienung zu erleichtern.
+Der __Admin__ kann __Diagnostiker:in__ anlegen.
+
+
+![](docs/UML_usecase.drawio.png)
+
+### Use Case
+
+- UC1: EKG-Daten auswerten
+    -bla
+
+- UC2: Daten verwalten
+
+## Implementierung
+__Use Case__ Die User Journey für die Diagnostiker:in wenn sie einen TEst auswerten möchten, folgt aus dem Activity Diagramm:
+
+![](docs/ekg_data._acticity.svg)
+
+### Design 
+
+HIer folgen erste Entwürfe eines UI Designs. Des Design ist für die DArstellung auf einem PC optimiert (Queerformat). Keine separaten Frames.
+
+### Datenbank
