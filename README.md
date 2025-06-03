@@ -29,7 +29,7 @@ In folgender Graik ist die erstellte Power-Curve zu sehen.
 ## Funktionsbeschreibungen
 
 ## Funktionsbeschreibung
-Die App soll __Diagnostiker:in__ ermöglichen, EKG_Daten verschiedener Patienten zu erfassen, zu speicher und auszuwerten. Die App soll eine einfache und intuiteve Benutzeroberfläche bierten, um die Bedienung zu erleichtern.
+Die App soll __Diagnostiker:in__ ermöglichen, EKG_Daten verschiedener Patienten zu erfassen, zu speicher und auszuwerten. Die App soll eine einfache und intuitive Benutzeroberfläche bieten, um die Bedienung zu erleichtern.
 Der __Admin__ kann __Diagnostiker:in__ anlegen.
 
 
@@ -37,10 +37,14 @@ Der __Admin__ kann __Diagnostiker:in__ anlegen.
 
 ### Use Case
 
-- UC1: EKG-Daten auswerten
-    -bla
+- UC1: EKG-Daten eines Tests auswerten
+    - UC1.1: Versuchspersonen auswählen (included)
+    - UC1.2: Test_ID auswählen
+    - UC1.3: ...
 
 - UC2: Daten verwalten
+
+- UC3: App Nutzer und Zugriffe verwalten
 
 ## Implementierung
 __Use Case__ Die User Journey für die Diagnostiker:in wenn sie einen TEst auswerten möchten, folgt aus dem Activity Diagramm:
@@ -49,6 +53,28 @@ __Use Case__ Die User Journey für die Diagnostiker:in wenn sie einen TEst auswe
 
 ### Design 
 
-HIer folgen erste Entwürfe eines UI Designs. Des Design ist für die DArstellung auf einem PC optimiert (Queerformat). Keine separaten Frames.
+Hier folgen erste Entwürfe eines UI Designs. Des Design ist für die Darstellung auf einem PC optimiert (Queerformat). Keine separaten Frames.
 
 ### Datenbank
+
+# EKG App - Streamlit Anwendung
+Die App dient zur Visualisierung von EKG-Daten und wurde als Streamlit-Anwendung für die Sakai-Abgabe 2 entwickelt.
+
+## Anwendung starten
+'streamlit run main.py'
+Nach kurzer Ladezeit öffnet sich automatisch ein Browserfenster mit der App-Oberfläche. Falls Änderungen am Code vorgenommen werden, müssen diese gespeichert und die Streamlit-Seite im Browser neu geladen werden.
+
+
+## Funktionsweise der EKG APP
+
+### Auswahl der Versuchsperson
+Zu Beginn wird der Name der Versuchsperson ausgewählt. Anschließend erscheint das zugehörige Bild der Person.
+### Eingabe der maximalen Herzfrequenz
+Diese kann manuell eingegeben oder über Plus-/Minus-Buttons angepasst werden.
+### Darstellung der Daten
+Zum Schluss wird ein Plot angezeigt, der die Herzfrequenz- und Leistungsdaten über die Zeit visualisiert.
+
+## Sakai Abgabe 2 - EKG APP
+Im folgenden Bild ist ein Screenshot der EKG-App zu sehen:
+
+![]()

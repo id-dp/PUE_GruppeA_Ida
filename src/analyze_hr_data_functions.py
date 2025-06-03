@@ -77,7 +77,7 @@ def plot_heart_rate_power(df, max_hr):
 
     # 6.3 Power (right y-axis)
     fig.add_trace(
-        go.Scatter(x=df["Time_min"], y=df["PowerOriginal"], name="Power [W]", line=dict(color="orange")),
+        go.Scatter(x=df["Time_min"], y=df["PowerOriginal"], name="Power", line=dict(color="grey")),
         secondary_y=True,
     )
 
