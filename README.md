@@ -70,7 +70,7 @@ Nach kurzer Ladezeit öffnet sich automatisch ein Browserfenster mit der App-Obe
 ### Auswahl der Versuchsperson
 Zu Beginn wird der Name der Versuchsperson ausgewählt. Anschließend erscheint das zugehörige Bild der Person.
 ### Eingabe der maximalen Herzfrequenz
-Diese kann manuell eingegeben oder über Plus-/Minus-Buttons angepasst werden.
+Diese kann manuell eingegeben oder über Plus-/Minus-Buttons angepasst werden. Dadurch ändern sich die Einfärbungen der Zonen unter dem Graphen der Herzfrequenz und die Zeit in einzelnen Zonen sowie die Durchschnittsleistung.
 ### Darstellung der Daten
 Zum Schluss wird ein Plot angezeigt, der die Herzfrequenz- und Leistungsdaten über die Zeit visualisiert.
 
