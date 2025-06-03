@@ -3,6 +3,7 @@ import pandas as pd
 from plotly import express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+import plotly.figure_factory as ff
 
 # %%
 # 1. load data and return DataFrame
@@ -110,10 +111,15 @@ def plot_heart_rate_power(df, max_hr):
 # %%
 # 6. calculate time spent in each zone and average power
 def calculate_time_per_zone(df):
-    time_per_zone = df["Zone"].value_counts().sort_index().rename("Anzahl Messpunkte").to_frame()
+    zones = ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5"]  # explizit definieren
+    zone_counts = df["Zone"].value_counts().reindex(zones, fill_value=0)
+    time_per_zone = zone_counts.rename("Anzahl Messpunkte").to_frame()
     time_per_zone["Zeit [s]"] = time_per_zone["Anzahl Messpunkte"]
     time_per_zone["Zeit [min]"] = (time_per_zone["Zeit [s]"] / 60).round(2)
-    time_per_zone["Leistung [W]"] = df.groupby("Zone")["PowerOriginal"].mean().round(2)
+    time_per_zone["Leistung [W]"] = df.groupby("Zone")["PowerOriginal"].mean().reindex(zones).round(2)
     time_per_zone.drop(columns=["Anzahl Messpunkte"], inplace=True)
+    time_per_zone.reset_index(inplace=True)
+    time_per_zone.rename(columns={"index": "Zone"}, inplace=True)
 
-    return time_per_zone
+    fig = ff.create_table(time_per_zone)
+    return fig

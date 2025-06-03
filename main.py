@@ -42,6 +42,9 @@ st.plotly_chart(plot_heart_rate_power(df, max_hr))
 time_zone_stats = calculate_time_per_zone(df)
 print(time_zone_stats)
 
+st.write("## Zeit in den Herzfrequenzzonen")
+st.plotly_chart(calculate_time_per_zone(df))
+
 # Viel Spaß
 st.write("")
 st.write("Viel Spaß mit der App!")

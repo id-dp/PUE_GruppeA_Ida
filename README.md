@@ -77,4 +77,4 @@ Zum Schluss wird ein Plot angezeigt, der die Herzfrequenz- und Leistungsdaten ü
 ## Sakai Abgabe 2 - EKG APP
 Im folgenden Bild ist ein Screenshot der EKG-App zu sehen:
 
-![]()
+![](figures/screenshot.png)
