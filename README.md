@@ -78,3 +78,16 @@ Zum Schluss wird ein Plot angezeigt, der die Herzfrequenz- und Leistungsdaten ü
 Im folgenden Bild ist ein Screenshot der EKG-App zu sehen:
 
 ![](figures/screenshot.png)
+
+# Leistungskurve 2 - Abgabe 3
+Ziel der Abgabe ist das Schreiben eines Skripts zur Erstellung eines Diagramms der Leistung in W über die gesamte Zeit der Activität.
+Dabei soll die Eingabe aus einer CSV-Datei oder aber auch einer NPY-Datei erfolgen können.
+Danach soll ein klassisches "Power Duration Curve"-Diagramm erstellt werden.
+
+## Verwendung des Skripts main_power_figures.py
+Zur Erstellung der beiden Diagramme muss die Datei main_power_figures.py ausgeführt werden.
+
+### Beispiel Ausgaben
+Aus dem Beispiel-Datensatz "activity.csv" werden folgende Diagramme erstellt:
+
+![](figures\screenshot_leistungskurve2.png)
